@@ -6,9 +6,6 @@ html {
         linear-gradient(#161122 21px, transparent 1%) center, #6a50b1;
     background-size: 22px 22px;
 }
-img {
-    height: 100px;
-}
 .container {
     height: 100%;
     display: flex;
@@ -17,17 +14,21 @@ img {
     align-items: center;
 }
 .item {
-    width: 300px;
+    width: 320px;
     text-align: center;
+}
+img {
+    height: 100px;
 }
 
 @media only screen and (max-width: 768px) {
     .container {
-        max-height: 500px;
-        padding-top: 15%;
-        align-items: center;
+        min-height: 300px;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+    .item {
+       width: auto;
     }
     img {
         height: 80px;
